@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="er">
+	<entities>
+		<data-source id="mysql8-1a0aa01f660-5aa0f7a1a80df92b">
+			<entity id="1" name="booking" fq-name="projectDB69.booking">
+				<path name="projectDB69"/>
+			</entity>
+			<entity id="2" name="class_equipment" fq-name="projectDB69.class_equipment">
+				<path name="projectDB69"/>
+			</entity>
+			<entity id="3" name="equipment" fq-name="projectDB69.equipment">
+				<path name="projectDB69"/>
+			</entity>
+			<entity id="4" name="gym_class" fq-name="projectDB69.gym_class">
+				<path name="projectDB69"/>
+			</entity>
+			<entity id="5" name="member" fq-name="projectDB69.`member`">
+				<path name="projectDB69"/>
+			</entity>
+			<entity id="6" name="trainer" fq-name="projectDB69.trainer">
+				<path name="projectDB69"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="class_equipment_ibfk_2" fq-name="projectDB69.class_equipment.class_equipment_ibfk_2" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="booking_ibfk_2" fq-name="projectDB69.booking.booking_ibfk_2" type="fk" pk-ref="4" fk-ref="1"/>
+		<relation name="class_equipment_ibfk_1" fq-name="projectDB69.class_equipment.class_equipment_ibfk_1" type="fk" pk-ref="4" fk-ref="2"/>
+		<relation name="booking_ibfk_1" fq-name="projectDB69.booking.booking_ibfk_1" type="fk" pk-ref="5" fk-ref="1"/>
+		<relation name="gym_class_ibfk_1" fq-name="projectDB69.gym_class.gym_class_ibfk_1" type="fk" pk-ref="6" fk-ref="4"/>
+	</relations>
+</diagram>
